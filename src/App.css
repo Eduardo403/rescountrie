@@ -1,16 +1,68 @@
-.App {
-  text-align: center;
+/************custon-propite************/
+:root {
+  --Dark-Mode-Elements: hsl(209, 23%, 22%);
+  --Dark-Mode-Background: hsl(207, 26%, 17%);
+  --Light-Mode-Text: hsl(200, 15%, 8%);
+  --Light-Mode-Input: hsl(0, 0%, 52%);
+  --Light-Mode-Background: hsl(0, 0%, 98%);
+  --Dark-Mode-Text-Light-Mode-Elements: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/****************reset*******************/
+html {
+  box-sizing: border-box;
+  font-family: var(--font-famili);
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+h6 {
+  margin: 0;
+  font-size: 0.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  line-height: 1.6;
 }
 
 .App-header {
@@ -22,17 +74,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
